@@ -1,12 +1,18 @@
 import React from "react";
-import HeroStation from "./components/HeroStation/HeroStation";
-import Navbar from "./components/UI/Navbar/Navbar";
+import Advantages from "./components/Advantages/Advantages";
+import Footer from "./components/Footer/Footer";
+import Hero from "./components/Hero/Hero";
+import Navbar from "./components/Navbar/Navbar";
+import Services from "./components/Services/Services";
 
 function App() {
   return (
-    <div>
+    <div >
       <Navbar />
-      <HeroStation />
+      <Hero />
+      <Advantages />
+      <Services />
+      <Footer />
     </div>
   );
 }
