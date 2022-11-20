@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <Hero />
       <Advantages />
-      <Services />
+     {/*  <Services /> */}
       <Footer />
     </div>
   );

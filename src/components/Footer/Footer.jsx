@@ -1,58 +1,59 @@
 import React from "react";
-import { BsBoxSeam } from "react-icons/bs";
-import { BsFillArrowUpCircleFill } from "react-icons/bs";
+import { BsFillArrowUpCircleFill, BsBoxSeam } from "react-icons/bs";
+import { FiMail } from "react-icons/fi";
+import { FiInstagram, FiFacebook } from "react-icons/fi";
 import "./FooterStyles.css";
 
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="top">
-        <div className="logo-footer">
-          <BsBoxSeam className="icon" />
-          <h2>Flyttela</h2>
+      <div className="container">
+        <div className="top">
+          <div className="logo-footer">
+            <BsBoxSeam className="icon" />
+            <h2>Flyttela</h2>
+          </div>
+          <BsFillArrowUpCircleFill className="icon" />
         </div>
-        <BsFillArrowUpCircleFill className="icon" />
-      </div>
-      <div className="col-container">
-        <div className="col">
-          <h3>Navigation</h3>
-          <p>Hem</p>
-          <p>Här finns vi</p>
-          <p>Tjänster</p>
-          <p>Om oss</p>
-          <p>Blog</p>
+        <div className="col-container">
+          <div className="col">
+            <h3>Sidkarta</h3>
+            <p>Hem</p>
+            <p>Här finns vi</p>
+            <p>Tjänster</p>
+            <p>Om oss</p>
+            <p>Blog</p>
+          </div>
+          <div className="col">
+            <h3>Tjänster</h3>
+            <p>Bohagsflytt</p>
+            <p>Ned & upp packning</p>
+            <p>Demontering & montering</p>
+            <p>Flyttstädning</p>
+            <p>Kontorsflytt</p>
+          </div>
+          <div className="col">
+            <h3>Öppettider</h3>
+            <p>Mån - Fre: 08:00 - 18:00</p>
+            <p>Lör: Stängt</p>
+            <p>Sön: Stängt</p>
+          </div>
+          <div className="col">
+            <h3>Kontakt</h3>
+            <p>info@flyttella.se</p>
+            <p>076 898 68 88</p>
+            <p>Folkskolegatan 32, Stockholm, Sverige</p>
+          </div>
+          <form>
+            <h3>Bli uppringd</h3>
+            <input type="email" placeholder="Enter your E-mail" />
+            <FiMail className="mail-icon" />
+            <div className="social-group">
+              <FiInstagram className="social-icon" />
+              <FiFacebook className="social-icon" />
+            </div>
+          </form>
         </div>
-        <div className="col">
-          <h3>Information</h3>
-          <p>Hem</p>
-          <p>Här finns vi</p>
-          <p>Tjänster</p>
-          <p>Om oss</p>
-          <p>Blog</p>
-        </div>
-        <div className="col">
-          <h3>legal</h3>
-          <p>Hem</p>
-          <p>Här finns vi</p>
-          <p>Tjänster</p>
-          <p>Om oss</p>
-          <p>Blog</p>
-        </div>
-        <div className="col">
-          <h3>Navigation</h3>
-          <p>Hem</p>
-          <p>Här finns vi</p>
-          <p>Tjänster</p>
-          <p>Om oss</p>
-          <p>Blog</p>
-        </div>
-        <form>
-          <h3>Bli uppringd</h3>
-          <input type="text" placeholder="Förnamn" />
-          <input type="text" placeholder="Efternamn" />
-          <input type="text" placeholder="E-post" />
-          <input type="text" placeholder="Telefon" />
-        </form>
       </div>
     </div>
   );
