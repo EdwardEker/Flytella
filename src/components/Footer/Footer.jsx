@@ -4,6 +4,8 @@ import { FiMail } from "react-icons/fi";
 import { FiInstagram, FiFacebook } from "react-icons/fi";
 import "./FooterStyles.css";
 
+import { Link } from "react-scroll";
+
 const Footer = () => {
   return (
     <div className="footer">
@@ -13,7 +15,15 @@ const Footer = () => {
             <BsBoxSeam className="icon" />
             <h2>Flyttela</h2>
           </div>
-          <BsFillArrowUpCircleFill className="icon" />
+          <Link
+            activeClass="active"
+            to="top"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            <BsFillArrowUpCircleFill className="icon" />
+          </Link>
         </div>
         <div className="col-container">
           <div className="col">

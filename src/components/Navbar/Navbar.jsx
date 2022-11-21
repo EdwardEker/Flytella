@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-/* import Logo from "../../assets/LogoFlyt.svg"; */
+import Logo from "../../assets/LogoFlyt.svg"; 
 import { FaBars, FaTimes } from "react-icons/fa";
 import { BsBoxSeam } from "react-icons/bs";
 import "./NavbarStyles.css";
@@ -9,12 +9,12 @@ const Navbar = () => {
   const handleNav = () => setNav(!nav);
 
   return (
-    <div className="navbar">
+    <div name="top" className="navbar">
       <div className="container">
         <div className="logo">
-          {/* <img src={Logo} alt="" className="logo-img" /> */}
-          <BsBoxSeam className="icon" />
-          <h1 className="">Flyttela</h1>
+          <img src={Logo} alt="" className="icon" /> 
+          {/* <BsBoxSeam className="icon" />
+          <h1 className="">Flyttela</h1> */}
         </div>
         <ul className={nav ? "nav-menu active" : "nav-menu"}>
           <li>Hem</li>
