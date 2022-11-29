@@ -1,34 +1,45 @@
 import React, { useState } from "react";
-import Logo from "../../assets/LogoFlyt.svg"; 
-import { FaBars, FaTimes } from "react-icons/fa";
-import { BsBoxSeam } from "react-icons/bs";
-import "./NavbarStyles.css";
+import { Link, NavLink } from "react-router-dom";
+import Logo from "../../assets/logoFlytt.png";
+import Links from "../../mocks/Links";
+import { AiOutlineClose, AiOutlineBars } from "react-icons/ai";
+
+import "./Navbar.css";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
-  const handleNav = () => setNav(!nav);
+  const [isNavShowing, setIsNavShowing] = useState(false);
 
   return (
-    <div name="top" className="navbar">
-      <div className="container">
-        <div className="logo">
-          <img src={Logo} alt="" className="icon" /> 
-          {/* <BsBoxSeam className="icon" />
-          <h1 className="">Flyttela</h1> */}
-        </div>
-        <ul className={nav ? "nav-menu active" : "nav-menu"}>
-          <li>Hem</li>
-          <li>Här finns vi</li>
-          <li>Tjänster</li>
-          <li>Om oss</li>
-          <li>Blog</li>
-          <button>Offert</button>
+    <nav>
+      <div className="container nav__container">
+        <Link to="/" className="logo" onClick={() => setIsNavShowing(false)}>
+          <img src={Logo} alt="Logotype Flyttela" />
+        </Link>
+        <ul
+          className={`nav__links ${isNavShowing ? "show__nav" : "hide__nav"}`}
+        >
+          {Links.map(({ name, path }, index) => {
+            return (
+              <li key={index}>
+                <NavLink
+                  to={path}
+                  className={({ isActive }) => (isActive ? "active-nav" : "")}
+                  onClick={() => setIsNavShowing(prev => !prev)}
+                >
+                  {name}
+                </NavLink>
+              </li>
+            );
+          })}
         </ul>
-        <div className="hamburger" onClick={handleNav}>
-          {!nav ? <FaBars className="icon" /> : <FaTimes className="icon" />}
-        </div>
+        <button
+          className="nav__toggle-btn"
+          onClick={() => setIsNavShowing(prev => !prev)}
+        >
+          {isNavShowing ? <AiOutlineClose /> : <AiOutlineBars />}
+        </button>
       </div>
-    </div>
+    </nav>
   );
 };
 
