@@ -18,17 +18,17 @@ const MainHeader = () => {
             porro cumque itaque nostrum ullam culpa.
           </p>
           
-          <Link to="/" className="btn lg">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Begär kostnadsfri offert
-          </Link>
-
           {/* <Link to="/" className="btn lg">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
             Begär kostnadsfri offert
           </Link> */}
+
+          <Link to="/" className="btn lg">
+            Begär kostnadsfri offert
+          </Link>
         </div>
         <div className="main__header-right">
           <div className="main__header-circle"></div>

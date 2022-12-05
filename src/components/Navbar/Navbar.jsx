@@ -24,7 +24,7 @@ const Navbar = () => {
                 <NavLink
                   to={path}
                   className={({ isActive }) => (isActive ? "active-nav" : "")}
-                  onClick={() => setIsNavShowing(prev => !prev)}
+                  onClick={() => setIsNavShowing((prev) => !prev)}
                 >
                   {name}
                 </NavLink>
@@ -34,7 +34,7 @@ const Navbar = () => {
         </ul>
         <button
           className="nav__toggle-btn"
-          onClick={() => setIsNavShowing(prev => !prev)}
+          onClick={() => setIsNavShowing((prev) => !prev)}
         >
           {isNavShowing ? <AiOutlineClose /> : <AiOutlineBars />}
         </button>

@@ -1,6 +1,6 @@
 .main__header {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 3rem);
   display:  grid;
   place-items: center;
   margin-top: 3rem;
@@ -30,4 +30,79 @@
   font-size: 1.1rem;
 }
 
+.main__header-right {
+  display: grid;
+  place-items: center;
+  position: relative;
+}
 
+.main__header-image {
+  position: relative;
+}
+
+/* .main__header-circle {
+  width: 25rem;
+  height: 25rem;
+  background: linear-gradient(75deg, var(--color-secondary), transparent);
+} */
+
+/* === Services === */
+.services {
+  margin-top: 4rem;
+}
+
+.services__wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.services__service a {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services__service a:hover {
+  background: var(--color-secondary);
+  color: var(--color-gray-600);
+}
+
+/* === Advantages === */
+.advantages__container {
+  display: grid;
+  grid-template-columns: 38% 50%;
+  gap: 12%;
+}
+
+.advantages__image {
+  filter: saturate(0.25);
+  transition: var(--transition);
+}
+
+.advantages__image:hover {
+  filter: saturate(1);
+}
+
+.advantages__right > p {
+  margin: 1.5rem 0 5rem;
+}
+
+.advantages__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.4rem 2.4rem;
+}
+
+.card.advantages__advantage {
+  padding-top: 3.5rem;
+  text-align: left;
+  position: relative;
+}
+
+.card.advantages__advantage span {
+  position: absolute;
+  top: -1.5rem;
+}

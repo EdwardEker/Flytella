@@ -73,7 +73,7 @@ img {
 }
 
 /* variant-2 */
-.btn {
+/* .btn {
   position: relative;
   padding: 0.6rem 0.9rem;
   font-size: 1.5rem;
@@ -108,14 +108,20 @@ img {
   transform: scale(1);
   transition-delay: 0.5s;
   box-shadow: 0 0 10px var(--color-secondary),
-  0 0 30px var(--color-secondary),
-  0 0 60px var(--color-secondary);
+    0 0 30px var(--color-secondary),
+    0 0 60px var(--color-secondary);
 }
 
 .btn span {
   position: absolute;
   background: var(--color-secondary);
-  pointer-events: ;
+  pointer-events: none;
+  box-shadow: 0 0 10px var(--color-secondary),
+    0 0 20px var(--color-primary-variant),
+    0 0 30px var(--color-primary-variant),
+    0 0 50px var(--color-primary-variant),
+    0 0 100px var(--color-primary-variant),
+  ;
 }
 
 .btn span:nth-child(1),
@@ -130,8 +136,64 @@ img {
   height: 40px;
 }
 
+.btn span:nth-child(1) {
+  top: calc(50% - 2px);
+  left: -50px;
+  transform-origin: left;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.25s;
+}
+
+.btn:hover span:nth-child(1) {
+  left: 50%;
+  transform: scaleX(0);
+  transition-delay: 0s;
+}
+
+.btn span:nth-child(3) {
+  top: calc(50% - 2px);
+  right: -50px;
+  transform-origin: right;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.25s;
+}
+
+.btn:hover span:nth-child(3) {
+  right: 50%;
+  transform: scaleX(0);
+  transition-delay: 0s;
+}
+
+.btn span:nth-child(2) {
+  left: calc(50% - 2px);
+  top: -50px;
+  transform-origin: top;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.25s;
+}
+
+.btn:hover span:nth-child(2) {
+  top: 50%;
+  transform: scaleY(0);
+  transition-delay: 0s;
+}
+
+.btn span:nth-child(4) {
+  left: calc(50% - 2px);
+  bottom: -50px;
+  transform-origin: bottom;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.25s;
+}
+
+.btn:hover span:nth-child(4) {
+  bottom: 50%;
+  transform: scaleY(0);
+  transition-delay: 0s;
+} */
+
 /* variant-1 */
-/* .btn {
+.btn {
   color: var(--color-gray-100);
   width: fit-content;
   margin: 0 auto;
@@ -159,4 +221,64 @@ img {
 
 .btn.sm:hover {
   background:var(--color-gray-100) ;
-} */
+}
+
+section {
+  margin-top: 10rem;
+}
+
+.section__head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section__head span {
+  background: var(--color-gray-500);
+  padding: 0.8rem;
+  border-radius: 1rem;
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+}
+
+.card {
+  background: var(--color-gray-500);
+  border: 2px solid transparent;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 0 3rem 0 3rem;
+  transition: var(--transition);
+}
+
+.card:hover {
+  background: transparent;
+  border-color: var(--color-gray-400);
+  cursor: default;
+}
+
+.card span {
+  width: 3rem;
+  height: 3rem;
+  background: var(--color-primary);
+  color: var(--color-gray-100);
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1.5rem;
+  margin-inline: auto;
+  border-radius: 1rem;
+  transition: var(--transition);
+}
+
+.card:hover span {
+  background: var(--color-secondary);
+  color: var(--color-gray-600);
+}
+
+.card small {
+  margin-top: 1rem;
+  display: block;
+  font-weight: 300;
+}
+
