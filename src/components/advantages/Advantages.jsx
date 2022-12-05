@@ -34,7 +34,7 @@ const Advantages = () => {
           <div className="advantages__wrapper">
             {AdvantagesList.map(({ id, icon, title, desc }) => {
               return (
-                <Card className="advantages__advantage">
+                <Card key={id} className="advantages__advantage">
                   <span>{icon}</span>
                   <h4>{title}</h4>
                   <small>{desc}</small>
