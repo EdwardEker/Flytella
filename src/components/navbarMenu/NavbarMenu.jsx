@@ -6,7 +6,7 @@ import { AiOutlineClose, AiOutlineBars } from "react-icons/ai";
 
 import "./Navbar.css";
 
-const Navbar = () => {
+const NavbarMenu = () => {
   const [isNavShowing, setIsNavShowing] = useState(false);
 
   return (
@@ -43,4 +43,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarMenu;
