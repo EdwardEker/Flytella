@@ -1,7 +1,7 @@
 .main__header {
   width: 100vw;
   height: calc(100vh - 3rem);
-  display:  grid;
+  display: grid;
   place-items: center;
   margin-top: 3rem;
 }
@@ -86,7 +86,7 @@
   filter: saturate(1);
 }
 
-.advantages__right > p {
+.advantages__right>p {
   margin: 1.5rem 0 5rem;
 }
 
@@ -200,4 +200,115 @@ footer {
   padding: 1.5rem 0;
   border-top: 2px solid var(--color-primary-variant);
   margin-top: 5rem;
+}
+
+/* Media queries (md) */
+@media screen and (max-width:1024px) {
+
+  /* Main header */
+  .main__header {
+    height: fit-content;
+    padding: 12rem 0;
+  }
+
+  .main__header-container {
+    gap: 0;
+  }
+
+  /* services */
+  .services__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Advantages */
+  .advantages__container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .advantages__wrapper {
+    gap: 4rem 3rem;
+  }
+
+  .advantages__image {
+    display: none;
+  }
+
+  /* Faqs */
+  .faqs__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+/* Media queries (sm) */
+@media screen and (max-width: 600px) {
+
+  /* Main header */
+  .main__header {
+    margin-top: 0;
+    padding: 12rem 0 0;
+    height: 100vh;
+  }
+
+  .main__header-image {
+    display: none;
+  }
+
+  .main__header-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Services */
+  .services__wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .services__service {
+    width: 84%;
+    margin: 0 auto;
+  }
+
+  /* Advantages */
+  .advantages__wrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .card.advantages__advantage {
+    width: 84%;
+    margin-inline: auto;
+  }
+
+  /* Faqs */
+  .faqs__wrapper {
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 7rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .footer__container article {
+    align-items: center;
+  }
+
+  .footer__container article p {
+    text-align: center;
+  }
 }

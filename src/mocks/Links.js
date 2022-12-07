@@ -5,18 +5,22 @@ const Links = [
   },
   {
     name: "Här finns vi",
-    path: "/about",
+    path: "/",
   },
   {
     name: "Tjänster",
-    path: "/contact",
+    path: "/services",
   },
   {
     name: "Om oss",
-    path: "/contact",
+    path: "/about",
   },
   {
-    name: "Blogg",
+    name: "Nyheter",
+    path: "/news",
+  },
+  {
+    name: "Kontakt",
     path: "/contact",
   },
 ];

@@ -1,7 +1,7 @@
 import React from 'react';
 import Advantages from '../../components/advantages/Advantages';
 import FAQs from '../../components/faqs/FAQs';
-import MainHeader from '../../components/header/MainHeader';
+import MainHeader from '../../components/mainHeader/MainHeader';
 import Services from '../../components/services/Services';
 import Testimonials from '../../components/testimonials/Testimonials';
 import Footer from '../../components/footer/Footer';
@@ -15,7 +15,6 @@ const Home = () => {
       <Services />
       <FAQs />
       {/* <Testimonials /> */}
-      <Footer />
     </>
   )
 }
