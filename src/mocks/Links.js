@@ -16,6 +16,10 @@ const Links = [
     path: "/about",
   },
   {
+    name: "Galleri",
+    path: "/gallery",
+  },
+  {
     name: "Nyheter",
     path: "/news",
   },

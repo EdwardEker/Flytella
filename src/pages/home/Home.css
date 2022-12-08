@@ -4,6 +4,7 @@
   display: grid;
   place-items: center;
   margin-top: 3rem;
+  background: var(--color-gray-600);
 }
 
 .main__header-container {
@@ -49,6 +50,8 @@
 /* === Services === */
 .services {
   margin-top: 4rem;
+  padding: 2rem;
+  background: var(--color-gray-600);
 }
 
 .services__wrapper {
@@ -79,6 +82,8 @@
 
 .advantages__image {
   filter: saturate(0.25);
+  overflow: hidden;
+  border-radius: 2rem;
   transition: var(--transition);
 }
 
@@ -137,6 +142,19 @@
 
 .faq p {
   margin-top: 1.5rem;
+}
+
+/* === Brands === */
+.brands {
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+.brands__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
 }
 
 /* === Footer === */
@@ -291,6 +309,12 @@ footer {
   /* Faqs */
   .faqs__wrapper {
     gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  .brands__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
     margin-top: 3rem;
   }
 

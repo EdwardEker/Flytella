@@ -1,5 +1,6 @@
 import React from "react";
 import mainHeader from "../../assets/mainHeader.jpg";
+import Video from "../../assets/videoInst.MOV";
 import { Link } from "react-router-dom";
 
 const MainHeader = () => {
@@ -17,7 +18,7 @@ const MainHeader = () => {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
             porro cumque itaque nostrum ullam culpa.
           </p>
-          
+
           {/* <Link to="/" className="btn lg">
             <span></span>
             <span></span>
@@ -31,9 +32,8 @@ const MainHeader = () => {
           </Link>
         </div>
         <div className="main__header-right">
-          <div className="main__header-circle"></div>
           <div className="main__header-image">
-            <img src={mainHeader} alt="" />
+            {/* <img src={mainHeader} alt="" /> */}
           </div>
         </div>
       </div>

@@ -1,10 +1,10 @@
 import React from 'react';
 import Advantages from '../../components/advantages/Advantages';
+import Brands from '../../components/brands/Brands';
 import FAQs from '../../components/faqs/FAQs';
 import MainHeader from '../../components/mainHeader/MainHeader';
-import Services from '../../components/services/Services';
+import ServicesMain from '../../components/servicesMain/ServicesMain';
 import Testimonials from '../../components/testimonials/Testimonials';
-import Footer from '../../components/footer/Footer';
 import './Home.css';
 
 const Home = () => {
@@ -12,8 +12,9 @@ const Home = () => {
     <>
       <MainHeader />
       <Advantages />
-      <Services />
+      <ServicesMain />
       <FAQs />
+      <Brands />
       {/* <Testimonials /> */}
     </>
   )
