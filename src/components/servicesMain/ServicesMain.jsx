@@ -6,16 +6,16 @@ import Card from "../../UI/card/Card";
 import { Link } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
-const Services = () => {
+const ServicesMain = () => {
   return (
-    <section className="services">
-      <div className="container services__container">
+    <section className="services-main">
+      <div className="container services-main__container">
         <SectionHeader icon={<FcServices />} title="Våra tjänster" />
 
-        <div className="services__wrapper">
+        <div className="services-main__wrapper">
           {ServicesList.map(({ id, icon, title, info, path }) => {
             return (
-              <Card className="services__service" key={id}>
+              <Card className="services-main__service" key={id}>
                 <span>{icon}</span>
                 <h4>{title}</h4>
                 <small>{info}</small>
@@ -31,4 +31,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ServicesMain;

@@ -48,27 +48,27 @@
 } */
 
 /* === Services === */
-.services {
+.services-main {
   margin-top: 4rem;
   padding: 2rem;
   background: var(--color-gray-600);
 }
 
-.services__wrapper {
+.services-main__wrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 3rem;
   margin-top: 4rem;
 }
 
-.services__service a {
+.services-main__service a {
   margin-top: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.services__service a:hover {
+.services-main__service a:hover {
   background: var(--color-secondary);
   color: var(--color-gray-600);
 }
@@ -234,7 +234,7 @@ footer {
   }
 
   /* services */
-  .services__wrapper {
+  .services-main__wrapper {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -284,13 +284,13 @@ footer {
   }
 
   /* Services */
-  .services__wrapper {
+  .services-main__wrapper {
     grid-template-columns: 1fr;
     gap: 2rem;
     margin-top: 3rem;
   }
 
-  .services__service {
+  .services-main__service {
     width: 84%;
     margin: 0 auto;
   }

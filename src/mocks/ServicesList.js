@@ -6,7 +6,7 @@ const ServicesList = [
     icon: <BiBox />,
     title: "Bohagsflytt",
     info: "Att flytta ska nämligen vara enkelt och vi ser till att det blir det.",
-    path: "/services/111",
+    path: "/services/servicespage",
   },
   {
     id: 2,
