@@ -1,5 +1,6 @@
 import React from 'react';
 import Advantages from '../../components/advantages/Advantages';
+import AdvantagesMini from '../../components/advantagesMini/AdvantagesMini';
 import Brands from '../../components/brands/Brands';
 import FAQs from '../../components/faqs/FAQs';
 import MainHeader from '../../components/mainHeader/MainHeader';
@@ -11,10 +12,11 @@ const Home = () => {
   return (
     <>
       <MainHeader />
+      <AdvantagesMini />
       <Advantages />
       <ServicesMain />
-      <FAQs />
       <Brands />
+      <FAQs />
       {/* <Testimonials /> */}
     </>
   )

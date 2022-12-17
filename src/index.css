@@ -13,6 +13,8 @@
 :root {
   --primary-hue: 210;
   --gray-hue: 240;
+  --color-white: #ffffff;
+  --color-black: #000000;
   --color-primary: hsl(var(--primary-hue), 100%, 50%);
   --color-primary-variant: hsl(var(--primary-hue), 100%, 65%);
   --color-secondary: #8bc53f;
@@ -33,10 +35,10 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: var(--color-gray-200);
+  color: var(--color-black);
   line-height: 1.7;
   overflow-x: hidden;
-  background: var(--color-gray-600);
+  background: var(--color-white);
 }
 
 .container {
@@ -63,7 +65,7 @@ h2 {
 }
 
 a {
-  color: var(--color-gray-100);
+  color: var(--color-gray-400);
 }
 
 img {

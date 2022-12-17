@@ -20,7 +20,7 @@ const Links = [
     path: "/gallery",
   },
   {
-    name: "Nyheter",
+    name: "Blogg",
     path: "/news",
   },
   {

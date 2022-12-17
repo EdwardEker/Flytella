@@ -4,7 +4,7 @@
   display: grid;
   place-items: center;
   margin-top: 3rem;
-  background: var(--color-gray-600);
+  background: var(--color-primary);
 }
 
 .main__header-container {
@@ -22,13 +22,20 @@
 
 .main__header-left h4 {
   margin-bottom: 1rem;
+  font-size: 1.2rem;
   color: var(--color-secondary);
-  font-weight: 400;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .main__header-left p {
   margin: 1rem 0 3.5rem;
   font-size: 1.1rem;
+  color: var(--color-gray-100);
+}
+
+.main__header-left .btn {
+  background: var(--color-gray-600);
 }
 
 .main__header-right {
@@ -51,7 +58,7 @@
 .services-main {
   margin-top: 4rem;
   padding: 2rem;
-  background: var(--color-gray-600);
+  background: var(--color-primary);
 }
 
 .services-main__wrapper {
@@ -73,7 +80,25 @@
   color: var(--color-gray-600);
 }
 
+/* === AdvantagesMini === */
+.advantages-mini {
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.advantages-mini__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
 /* === Advantages === */
+.advantages {
+  background: var(--color-primary);
+  padding: 2rem;
+}
+
 .advantages__container {
   display: grid;
   grid-template-columns: 38% 50%;
@@ -93,6 +118,7 @@
 
 .advantages__right>p {
   margin: 1.5rem 0 5rem;
+  color: var(--color-gray-600);
 }
 
 .advantages__wrapper {
@@ -179,6 +205,10 @@ footer {
   gap: 0.7rem;
 }
 
+.footer__container article a {
+  color: var(--color-white);
+}
+
 .footer__container article p {
   margin-top: 0.5rem;
 }
@@ -253,6 +283,11 @@ footer {
     display: none;
   }
 
+  /* AdvantagesMini */
+  .advantages-mini__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
   /* Faqs */
   .faqs__wrapper {
     grid-template-columns: 1fr;
@@ -304,6 +339,18 @@ footer {
   .card.advantages__advantage {
     width: 84%;
     margin-inline: auto;
+  }
+  
+  /* AdvantagesMini */
+  .advantages-mini__wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .advantages-mini__advantage {
+    width: 84%;
+    margin: 0 auto;
   }
 
   /* Faqs */

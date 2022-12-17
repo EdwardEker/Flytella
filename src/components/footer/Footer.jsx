@@ -41,7 +41,7 @@ const Footer = () => {
           <Link to="/about">Här finns vi</Link>
           <Link to="/about">Tjänster</Link>
           <Link to="/about">Om oss</Link>
-          <Link to="/about">Blogg</Link>
+          <Link to="/news">Blogg</Link>
           <Link to="/about">Kontakt</Link>
         </article>
         <article>
@@ -54,7 +54,8 @@ const Footer = () => {
         </article>
         <article>
           <h4>Kontakt</h4>
-          
+          <p>076 898 68 88</p>
+          <p>Folkskolegatan 32, Stockholm, Sverige</p>
         </article>
       </div>
       <div className="footer__copyright">
