@@ -5,7 +5,7 @@ const Links = [
   },
   {
     name: "Här finns vi",
-    path: "/",
+    path: "/city",
   },
   {
     name: "Tjänster",

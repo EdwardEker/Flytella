@@ -15,8 +15,8 @@ const Home = () => {
       <AdvantagesMini />
       <Advantages />
       <ServicesMain />
-      <Brands />
-      <FAQs />
+      <Brands /> 
+      {/* <FAQs /> */}
       {/* <Testimonials /> */}
     </>
   )

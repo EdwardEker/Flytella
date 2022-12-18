@@ -58,7 +58,6 @@
 .services-main {
   margin-top: 4rem;
   padding: 2rem;
-  background: var(--color-primary);
 }
 
 .services-main__wrapper {
@@ -75,8 +74,25 @@
   justify-content: center;
 }
 
-.services-main__service a:hover {
+.services-main__container h2 {
+  color: var(--color-gray-600);
+}
+
+.services-main__service.card {
+  color: var(--color-gray-100);
+}
+
+.services-main__service.card:hover {
+  background: var(--color-primary);
+  border-color: var(--color-secondary);
+}
+
+.services-main__service.card:hover a {
   background: var(--color-secondary);
+}
+
+.services-main__service a:hover {
+  background: var(--color-primary);
   color: var(--color-gray-600);
 }
 
@@ -93,10 +109,16 @@
   margin-top: 2rem;
 }
 
+.advantages-mini__advantage.card:hover {
+  background: var(--color-primary);
+  border-color: var(--color-secondary);
+}
+
 /* === Advantages === */
 .advantages {
   background: var(--color-primary);
-  padding: 2rem;
+  padding: 4rem;
+  margin-top: 4rem;
 }
 
 .advantages__container {
@@ -118,7 +140,7 @@
 
 .advantages__right>p {
   margin: 1.5rem 0 5rem;
-  color: var(--color-gray-600);
+  color: var(--color-white);
 }
 
 .advantages__wrapper {
@@ -131,11 +153,21 @@
   padding-top: 3.5rem;
   text-align: left;
   position: relative;
+  color: var(--color-white);
+}
+
+.card.advantages__advantage:hover span {
+  background: var(--color-secondary);
+}
+
+.card.advantages__advantage:hover {
+  border-color: var(--color-secondary);
 }
 
 .card.advantages__advantage span {
   position: absolute;
   top: -1.5rem;
+  background: var(--color-primary-variant);
 }
 
 /* === FAQs === */
@@ -340,7 +372,7 @@ footer {
     width: 84%;
     margin-inline: auto;
   }
-  
+
   /* AdvantagesMini */
   .advantages-mini__wrapper {
     grid-template-columns: 1fr;

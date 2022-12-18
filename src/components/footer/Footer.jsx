@@ -37,7 +37,7 @@ const Footer = () => {
         </article>
         <article>
           <h4>Sidkarta</h4>
-          <Link to="/about">Hem</Link>
+          <Link to="/">Hem</Link>
           <Link to="/about">Här finns vi</Link>
           <Link to="/about">Tjänster</Link>
           <Link to="/about">Om oss</Link>
