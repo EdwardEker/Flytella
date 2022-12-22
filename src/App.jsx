@@ -8,7 +8,7 @@ import Contact from "./pages/contact/Contact";
 import Services from "./pages/services/Services";
 import News from "./pages/news/News";
 import Gallery from "./pages/gallery/Gallery";
-import City from './pages/city/City';
+import City from "./pages/city/City";
 import NotFound from "./pages/notFound/NotFound";
 
 const App = () => {
@@ -23,7 +23,7 @@ const App = () => {
         <Route path="gallery" element={<Gallery />} />
         <Route path="news" element={<News />} />
         <Route path="contact" element={<Contact />} />
-        <Route path='*' element={<NotFound />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>
